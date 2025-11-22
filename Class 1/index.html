@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 1</title>
+</head>
+<body>
+    <h1>Class 1</h1>
+    <h2>Typescript</h2>
+    <p>Its superset of javascript , superset means new addition and extra / advnace features. In ts we define the type of vriable means we deifne which kind od data we are receiving or sending. It helps to reduce error as it show error in developement time means before execution or runtime it show errors. Altough browser understand js so we use ts compiler which convert ts file into js for browser understanding.</p>
+    <br>
+    <h1>w3schools</h1>
+    <h3>What is TypeScript?</h3>
+    <p>TypeScript is a syntactic superset of JavaScript which adds static typing.This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.TypeScript being a Syntactic Superset means it shares the same base syntax as JavaScript, but adds something to it.</p>
+    <h3>Why should I use TypeScript?</h3>
+    <p>JavaScript is a loosely typed language.It can be difficult to understand what types of data are being passed around in JavaScript.In JavaScript, function parameters and variables don't have any information!So developers need to look at documentation, or guess based on the implementation.TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.For example, TypeScript will report an error when passing a string into a function that expects a number.JavaScript will not.TypeScript uses compile time type checking.Which means it checks if the specified types match before running the code, not while running the code.</p>
+    <br>
+    <p>We attach js file with html which is auto generated when we compile ts file</p>
+    <br>
+    <h4>Download</h4>
+    <ul>
+        <li>Download node.js</li>
+        <li>VS => Terminal => New terminal => cmd run this command=> npm(note package manager) i(install) -g(means istall package globally) typescript => npm i -g typescript</li>
+        <li>Check node.js installation => node --version</li>
+        <li>Check ts installation => tsc(typescript compiler) -v(version) => tsc -v</li>
+    </ul>
+    <p>Extension of ts file is .ts</p>
+    <br>
+    <h4>Run file</h4>
+    <ul>
+        <li>We write => tsc filename => tsc index.ts => in terminal to compile ts file into js</li>
+        <li>Everytime we write even a single line we have to run this command as we have not done setup after setup we dont need to run this command</li>
+        <li>tsc index.ts => convert ts file into js and make a new js file with same name and same code in js file as well as in ts file</li>
+        <li>If we create js file mannually then its not attached with ts thats y we dont mannually make js file</li>
+        <li>If we write something in ts and on same line we write something else in js then js will be overwrite means we have wriiten only what we have in ts and js wok will be remain same as ts means we dont have different work in both files , we have only ts work in both files </li>
+        <li>If we open both ts and js file together it show error as we did not setup</li>
+    </ul>
+    <br>
+    <h4>Topics</h4>
+    <ul>
+        <li>Type infarance => Implicit</li>
+        <li>Type annotation => Explicit</li>
+        <li>Any type</li>
+        <li>Array</li>
+    </ul>
+    <br>
+    <h3>Type Annotations and Inference</h3>
+    <p>TypeScript offers two ways to work with types: <ul><li>Explicit Typing: You explicitly declare the type of a variable</li>
+    <li>Type Inference: TypeScript automatically determines the type based on the assigned value</li></ul></p>
+    <br>
+    <h3>When to Use Each Approach</h3>
+    <ul>
+        <li>Use explicit types for: <ul>
+            <li>Function parameters and return types</li>
+            <li>Object literals</li>
+            <li>When the initial value might not be the final type</li>
+        </ul></li>
+    </ul>
+    <ul>
+        <li>Use type inference for: <ul>
+            <li>Simple variable declarations with immediate assignment</li>
+            <li>When the type is obvious from the context</li>
+        </ul></li>
+    </ul>
+    <script src="index.js"></script>
+</body>
+</html>

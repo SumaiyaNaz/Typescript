@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 2</title>
+</head>
+<body>
+    <h1>Class 2</h1>
+    <h2>Project setup (Project configuration)</h2>
+    <p>Make this setup in all folders where you use ts by this we can see ts file file in console so it make easy to catch error in ts file as before setup we see js file in console so how can we fix error in ts file if we can see only js file , so this setup will help in this problem.</p>
+    <h3>Steps</h3>
+    <ul>
+        <li>In terminal => tsc --int => typescrip compiler initialize => it will create a file having name tsconfig.json in main directory(folder)</li>
+        <li>In json file : (Compiler Options)<ul>
+            <li>Uncomment root directory (all ts file in it ) and out (output) directory (all js file in it )</li>
+        </ul></li>
+        <li>Make two folders of same name as in root and out directory and name area : <ul><li>src</li><li>dist</li></ul></li>
+        <li>In json file : (Environment Settings) <ul><li>Set module as esnext as now we are using es means js it can set different for all languages</li><li>Set target (target means version means on which version we want to work) as es2016 , 2022 as mostly we use this.</li></ul></li>
+    </ul>
+    <br>
+    <h4>Note :</h4>
+    <p>Index file is created in main folder and attach js file with it.</p>
+    <p>Always run file with live server after setup.</p>
+    <p>ts file will created in src folder</p>
+    <p>Now write only tsc in terminal beacuse of the setup now we dont need to write file name. and it also generate all file of js in dist folder after cmpiling ts fie into js</p>
+    <p>tsc --watch => dont need to write tsc again and again as this command runs ts file like live server and its called watch mode</p>
+    <p>Shortcut of tsc --watch  is => tsc -w</p>
+    <p>To exit watch mode write Ctrl + C in terminal</p>
+    <p></p>
+    <br>
+    <h4>Extra :</h4>
+    <p>In json file => Other Outputs => "sourceMap": true, => thats y in js all code goes in index.js.map => and in this file (index.js.map) we see "sources":["../src/index.ts"] => thats y we see ts in compiler due to setup</p>
+    <p>In index.js there is export so we use type module in js link in html file</p>
+    <p>Due to setup now we can open both ts and js file together.</p>
+    <script src="./dist/index.js" type="module"></script>
+</body>
+</html>
